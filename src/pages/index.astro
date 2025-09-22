@@ -1,0 +1,77 @@
+---
+import '../styles/tokens.css';
+import HeaderDots from '../components/HeaderDots.tsx';
+import OverlayMenu from '../components/OverlayMenu.tsx';
+import BookIndex from '../components/BookIndex.tsx';
+import LatestOverlay from '../components/LatestOverlay.tsx';
+import CookieConsentModal from '../components/CookieConsentModal.tsx';
+import PodcasterinnenRail from '../components/PodcasterinnenRail.tsx';
+
+
+let open = false;
+function toggle(){ open = !open }
+---
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Schnauze tierisch voll – Start</title>
+<meta name="description" content="Podcast & Lexikon – Tiere, Erste Hilfe, Erfahrungen." />
+</head>
+<body class="min-h-screen">
+<CookieConsentModal client:load />
+<div class="absolute inset-0 -z-10">
+<img src="/images/walberla.jpg" alt="Walberla" class="w-full h-full object-cover" />
+<div class="absolute inset-0 bg-black/35"></div>
+</div>
+
+
+<div class="p-4 flex items-center gap-3">
+<HeaderDots onOpen={toggle} client:load />
+<img src="/images/logo.svg" alt="Schnauze tierisch voll" class="h-10" />
+</div>
+
+
+<OverlayMenu open={open} onClose={toggle} client:only="react" />
+
+
+<main class="max-w-6xl mx-auto px-4 pt-8 pb-16">
+<section class="text-white">
+<h1 class="text-4xl md:text-5xl font-semibold mb-6">Schnauze tierisch voll</h1>
+<p class="max-w-2xl text-white/90 mb-8">Dein tierisches Lexikon & Podcast. Stöbere durch Kategorien oder öffne die neuesten Dateien.</p>
+</section>
+
+
+<!-- 3D-Buch Platzhalter (lazy: nur Bild + Overlay) -->
+<section class="relative bg-white/80 rounded-2xl p-4 shadow-xl overflow-hidden">
+<img src="/images/horse_frei.svg" alt="Buch" class="absolute opacity-10 right-4 top-4 w-32 h-32" />
+<div class="relative">
+<h2 class="text-xl font-semibold mb-2">Neueste Dateien</h2>
+<div class="relative">
+<img src="/images/walberla_blurr.jpg" alt="Buch-Placeholder" class="w-full rounded-2xl" />
+<LatestOverlay client:only="react" />
+</div>
+</div>
+</section>
+
+
+<section class="mt-10">
+<h2 class="text-xl font-semibold mb-4 text-white">Kategorien</h2>
+<BookIndex client:only="react" />
+</section>
+</main>
+
+
+<footer class="mt-8 bg-white/90">
+<div class="max-w-6xl mx-auto px-4 py-4 text-sm text-neutral-700">
+<div class="border-t pt-3">
+<PodcasterinnenRail client:only="react" />
+<div class="flex gap-4 py-2">
+<a href="/impressum" class="underline">Impressum</a>
+<a href="/datenschutz" class="underline">Datenschutz</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
