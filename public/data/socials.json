@@ -1,0 +1,9 @@
+[
+  { "id": "spotify",  "label": "Spotify",  "url": "https://open.spotify.com/show/06YvSlRFL0GZsadPR3U6dV?si=7a2d8591f9f64c7c", "icon": "spotify" },
+  { "id": "apple",    "label": "Apple Podcasts", "url": "https://podcasts.apple.com/lt/podcast/schnauze-tierisch-voll/id1838526138", "icon": "apple" },
+  { "id": "listennotes-embed", "label": "ListenNotes", "url": "https://www.listennotes.com/podcasts/schnauze-tierisch-voll-pia-xo36J5PzBWH/embed/", "icon": "listen" },
+  { "id": "youtube",  "label": "YouTube",  "url": "https://www.youtube.com/@schnauzetierischvoll", "icon": "youtube" },
+  { "id": "instagram","label": "Instagram","url": "https://www.instagram.com/schnauzetierischvoll/", "icon": "instagram" },
+  { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/profile.php?id=61580437593807&locale=de_DE", "icon": "facebook" },
+  { "id": "tiktok",   "label": "TikTok",   "url": "https://www.tiktok.com/@schnauze.tierisch.voll?_t=ZN-8zvPd0TMSHK&_r=1", "icon": "tiktok" }
+]
