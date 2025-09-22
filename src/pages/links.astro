@@ -1,0 +1,18 @@
+---
+import '../styles/tokens.css';
+import SocialGrid from '../components/SocialGrid.tsx';
+import PodcasterinnenRail from '../components/PodcasterinnenRail.tsx';
+---
+<html lang="de">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Links</title></head>
+<body>
+<main class="max-w-6xl mx-auto p-4">
+<h1 class="text-3xl font-semibold mb-6">Links & Social</h1>
+<SocialGrid client:only="react" />
+<div class="mt-8 border-t pt-3">
+<h2 class="text-xl font-semibold mb-2">Podcasterinnen</h2>
+<PodcasterinnenRail client:only="react" />
+</div>
+</main>
+</body>
+</html>
