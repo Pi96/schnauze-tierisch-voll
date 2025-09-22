@@ -1,0 +1,39 @@
+---
+import '../../styles/tokens.css';
+import MediaViewer from '../../components/MediaViewer.tsx';
+import { fetchList } from '../../lib/api';
+
+
+const { search } = Astro.request.url ? new URL(Astro.request.url) : { search: '' };
+const params = new URLSearchParams(search);
+const path = params.get('path') || '/';
+
+
+let data = await fetchList(path).catch(()=>({ items: [] }));
+const file = Array.isArray(data.items) ? data.items.find((i:any)=>i.type==='file') : null;
+---
+<html lang="de">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Lexikon – Ansicht</title></head>
+<body class="min-h-screen bg-white">
+<main class="max-w-6xl mx-auto p-4">
+<h1 class="text-2xl font-semibold mb-4">{path}</h1>
+<section class="mb-6">
+<MediaViewer client:only="react" item={file} />
+</section>
+<section>
+<h2 class="text-xl font-semibold mb-2">Ordner & Dateien</h2>
+<ul class="grid md:grid-cols-2 gap-3">
+{Array.isArray(data.items) && data.items.map((it:any) => (
+<li>
+{it.type === 'dir' ? (
+<a href={`/lexikon?path=${encodeURIComponent(it.url?.split('path=')[1] || path + '/' + it.name)}`} class="block p-3 rounded-xl bg-neutral-50 hover:bg-neutral-100">📁 {it.name}</a>
+) : (
+<a href={`/lexikon?path=${encodeURIComponent(path)}`} class="block p-3 rounded-xl bg-neutral-50 hover:bg-neutral-100">📄 {it.name}</a>
+)}
+</li>
+))}
+</ul>
+</section>
+</main>
+</body>
+</html>
