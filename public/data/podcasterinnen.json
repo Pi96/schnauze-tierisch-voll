@@ -1,0 +1,12 @@
+[
+  { "name": "Michelle", "avatar": "/avatars/michelle.jpg", "rolle": "Co-Hostin", "links": { "instagram": "https://www.instagram.com/palido_bonita/" } },
+  { "name": "Ella", "avatar": "/avatars/ella.jpg", "rolle": "Co-Hostin", "links": { "instagram": "" } },
+  { "name": "Julia", "avatar": "/avatars/julia.jpg", "rolle": "Co-Hostin", "links": { "instagram": "https://www.instagram.com/tschulia2303/" } },
+  { "name": "Jana", "avatar": "/avatars/jana.jpg", "rolle": "Co-Hostin", "links": { "instagram": "https://www.instagram.com/janaheilmann/" } },
+  { "name": "Serap & Sabine", "avatar": "/avatars/serap-sabine.jpg", "rolle": "Gäste/Contributor", "links": {
+      "instagram": "https://www.instagram.com/stormy_1975/",
+      "tiktok": "https://www.tiktok.com/@stormythenormy",
+      "facebook": "https://www.facebook.com/profile.php?id=61572745708627&locale=de_DE"
+  }},
+  { "name": "Mischi", "avatar": "/avatars/mischi.jpg", "rolle": "Contributor", "links": { "instagram": "https://www.instagram.com/mischi_mischi/" } }
+]
