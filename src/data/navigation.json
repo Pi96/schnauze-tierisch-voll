@@ -1,0 +1,6 @@
+[
+  { "path": "/", "label": "Start", "icon": "home" },
+  { "path": "/lexikon", "label": "Lexikon", "icon": "book" },
+  { "path": "/links", "label": "Links", "icon": "globe" },
+  { "path": "/podcast", "label": "Podcast", "icon": "podcast" }
+]
