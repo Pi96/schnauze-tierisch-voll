@@ -9,7 +9,7 @@ export default function PodcasterinnenRail() {
         <div key={p.name} className="flex items-center gap-2 shrink-0">
           {/* Immer das feste Icon anzeigen */}
           <img
-            src="/images/icons/user.svg"
+            src="/images/icons/podcast.svg"
             alt="icon"
             className="w-6 h-6 object-contain"
           />
