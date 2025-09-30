@@ -1,1 +1,0 @@
-const n="http://localhost:8000";async function s(e="/"){const o=`${n}/api/list?path=${encodeURIComponent(e)}`,t=await fetch(o);if(!t.ok)throw new Error("List fetch failed");return t.json()}async function a(e=10){const o=`${n}/api/latest?limit=${e}`,t=await fetch(o);if(!t.ok)throw new Error("Latest fetch failed");return t.json()}export{a,s as f};
