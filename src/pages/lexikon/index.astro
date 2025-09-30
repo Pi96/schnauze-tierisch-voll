@@ -1,13 +1,19 @@
 ---
-import '../styles/tokens.css';
-import { API_BASE } from '../../lib/api';
+import '../../styles/tokens.css';
+import LexikonClient from '../../components/LexikonClient.tsx';
 ---
 <html lang="de">
-<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Lexikon</title></head>
-<body class="min-h-screen bg-white">
-<main class="max-w-6xl mx-auto p-4">
-<h1 class="text-3xl font-semibold mb-4">Lexikon</h1>
-<p>Wähle links Kategorien auf der Startseite oder rufe Dateien direkt über Deeplinks auf.</p>
-</main>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Lexikon</title>
+    <meta name="description" content="Lexikon – Dateien & Kategorien" />
+  </head>
+  <body class="min-h-screen bg-white">
+    <main class="max-w-6xl mx-auto p-4">
+      <h1 class="text-3xl font-semibold mb-4">Lexikon</h1>
+      <p class="text-neutral-600 mb-4">Wähle eine Kategorie oder öffne eine Datei. Du kannst auch direkt mit <code>?path=/Kategorie</code> verlinken.</p>
+      <LexikonClient client:only="react" />
+    </main>
+  </body>
 </html>
