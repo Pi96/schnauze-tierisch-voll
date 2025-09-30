@@ -1,5 +1,6 @@
 ---
 import '../styles/tokens.css';
+import MenuClient from '../components/MenuClient.tsx';
 import HeaderDots from '../components/HeaderDots.tsx';
 import OverlayMenu from '../components/OverlayMenu.tsx';
 import BookIndex from '../components/BookIndex.tsx';
@@ -15,7 +16,7 @@ function toggle(){ open = !open }
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Schnauze tierisch voll – Start</title>
+<title>Schnauze tierisch voll – Homepage</title>
 <meta name="description" content="Podcast & Lexikon – Tiere, Erste Hilfe, Erfahrungen." />
 </head>
 <body class="min-h-screen">
@@ -26,13 +27,10 @@ function toggle(){ open = !open }
 </div>
 
 
-<div class="p-4 flex items-center gap-3">
-<HeaderDots onOpen={toggle} client:load />
-<img src="/images/logo.svg" alt="Schnauze tierisch voll" class="h-10" />
-</div>
-
-
-<OverlayMenu open={open} onClose={toggle} client:only="react" />
+  <header class="p-4 flex items-center gap-3">
+    <MenuClient client:only="react" />
+    <img src="/images/logo.svg" alt="Schnauze tierisch voll" class="h-10" />
+  </header>
 
 
 <main class="max-w-6xl mx-auto px-4 pt-8 pb-16">
