@@ -1,6 +1,7 @@
 ---
 import '../styles/tokens.css';
 import MenuClient from '../components/MenuClient.tsx';
+import BuchCanvas from '../components/BuchCanvas.tsx';
 import HeaderDots from '../components/HeaderDots.tsx';
 import OverlayMenu from '../components/OverlayMenu.tsx';
 import BookIndex from '../components/BookIndex.tsx';
@@ -40,16 +41,25 @@ function toggle(){ open = !open }
 </section>
 
 
-<!-- 3D-Buch Platzhalter (lazy: nur Bild + Overlay) -->
-<section class="relative bg-white/80 rounded-2xl p-4 shadow-xl overflow-hidden">
-<img src="/images/horse_frei.svg" alt="Buch" class="absolute opacity-10 right-4 top-4 w-32 h-32" />
-<div class="relative">
-<h2 class="text-xl font-semibold mb-2">Neueste Dateien</h2>
-<div class="relative">
-<img src="/images/walberla_blurr.jpg" alt="Buch-Placeholder" class="w-full rounded-2xl" />
-<LatestOverlay client:only="react" />
-</div>
-</div>
+<section class="relative bg-white/80 rounded-2xl p-4 shadow-xl overflow-hidden mt-8">
+  <!-- Dekoratives Watermark -->
+  <img src="/images/horse_frei.svg" alt="" class="pointer-events-none select-none absolute opacity-10 right-4 top-4 w-32 h-32" />
+
+  <!-- Hintergrundfoto -->
+  <img src="/images/walberla_blurr.jpg" alt="Bühne" class="w-full rounded-xl h-72 md:h-[420px] object-cover" />
+
+  <!-- 3D-Buch auf der Fläche -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div class="w-full max-w-3xl h-[460px] md:h-[520px]"> <!-- Höhe hier angepasst -->
+      <BuchCanvas client:only="react" />
+    </div>
+  </div>
+
+  <!-- Overlay-Text/Links über dem Buch -->
+  <div class="absolute top-6 left-6 md:top-10 md:left-10 z-20">
+    <h2 class="text-xl font-semibold text-white drop-shadow">Neueste Dateien</h2>
+    <LatestOverlay client:only="react" />
+  </div>
 </section>
 
 
