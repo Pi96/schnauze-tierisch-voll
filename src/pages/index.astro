@@ -56,10 +56,12 @@ function toggle(){ open = !open }
   </div>
 
   <!-- Overlay-Text/Links über dem Buch -->
-  <div class="absolute top-6 left-6 md:top-10 md:left-10 z-20">
-    <h2 class="text-xl font-semibold text-white drop-shadow">Neueste Dateien</h2>
+<div class="absolute inset-0 z-20 flex items-start justify-center pt-6 md:pt-8">
+  <div class="w-[90%] md:w-[70%]">
+    <h2 class="text-xl font-semibold text-white drop-shadow mb-2">Neueste Dateien</h2>
     <LatestOverlay client:only="react" />
   </div>
+</div>
 </section>
 
 

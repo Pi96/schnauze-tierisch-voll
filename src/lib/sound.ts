@@ -1,18 +1,30 @@
+// src/lib/sound.ts
 let bird: HTMLAudioElement | null = null;
 let clickS: HTMLAudioElement | null = null;
 let jingle: HTMLAudioElement | null = null;
 
+// –12 dB ≈ Gain 0.25 (10^(-12/20) ≈ 0.251)
+const GAIN = 0.28;
+
 function makeSrc(path: string) {
-  // Falls dein Projekt ein BASE_URL hat (Astro), werden die Audios korrekt referenziert.
   const base = (import.meta as any)?.env?.BASE_URL ?? "/";
   return `${base.replace(/\/?$/, "/")}${path.replace(/^\//, "")}`;
 }
 
 export function initSounds(): void {
   try {
-    if (!bird) bird = new Audio(makeSrc("sounds/vogel.mp3"));
-    if (!clickS) clickS = new Audio(makeSrc("sounds/click.mp3"));
-    if (!jingle) jingle = new Audio(makeSrc("sounds/jingle.mp3"));
+    if (!bird) {
+      bird = new Audio(makeSrc("sounds/vogel.mp3"));
+      bird.volume = GAIN;
+    }
+    if (!clickS) {
+      clickS = new Audio(makeSrc("sounds/click.mp3"));
+      clickS.volume = GAIN;
+    }
+    if (!jingle) {
+      jingle = new Audio(makeSrc("sounds/jingle.mp3"));
+      jingle.volume = GAIN;
+    }
   } catch {
     // noop
   }
@@ -38,12 +50,9 @@ export function playBirdOnce(): void {
 export function click(): void {
   initSounds();
   if (clickS) {
-    // Wichtig: Klammern oder separates if, sonst "Invalid assignment target"
     try {
       clickS.currentTime = 0;
-    } catch {
-      // Einige Browser erlauben currentTime erst nach Metadata-Load
-    }
+    } catch {}
   }
   safePlay(clickS);
 }

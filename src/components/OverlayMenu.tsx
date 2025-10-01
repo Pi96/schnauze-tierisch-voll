@@ -19,10 +19,6 @@ className="flex items-center gap-3 p-3 rounded-xl hover:bg-neutral-100">
 </a>
 </li>
 ))}
-<li className="mt-2 pt-2 border-t">
-<a className="mr-4 underline" href="/impressum">Impressum</a>
-<a className="underline" href="/datenschutz">Datenschutz</a>
-</li>
 </ul>
 </nav>
 </div>

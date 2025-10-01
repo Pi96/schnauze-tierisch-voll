@@ -28,9 +28,12 @@ export default function LatestOverlay() {
   const right = useMemo(() => files.slice(5, 10), [files]);
 
 const LinkItem = ({ it }: { it: FileItem }) => {
-  const slug = it.path.split("/").filter(Boolean).join("/");
-  // Link zeigt auf den Ordner + gewünschte Datei als ?file=
-  const href = `/lexikon/${slug}?file=${encodeURIComponent(it.name)}`;
+  // Normalisiere den Pfad: führende/hintere Slashes weg
+  const norm = it.path.replace(/^\/+/, "").replace(/\/+$/, "");
+  // Baue eine absolut-encodete URL: /lexikon/<seg1>/<seg2>...
+  const encodedSlug = norm.split("/").map(encodeURIComponent).join("/");
+  const href = `/lexikon/${encodedSlug}?file=${encodeURIComponent(it.name)}`;
+
   return (
     <a href={href} className="block truncate hover:underline" title={it.name}>
       {it.name}
@@ -38,16 +41,20 @@ const LinkItem = ({ it }: { it: FileItem }) => {
   );
 };
 
-  if (!files.length) return null;
+if (!files.length) return null;
 
-  return (
-    <div className="pointer-events-none select-none">
-      <div className="absolute left-6 top-10 w-48 text-sm text-neutral-900/90 space-y-1 pointer-events-auto">
+return (
+  <div className="absolute inset-x-6 top-6 md:top-8 z-20 pointer-events-auto">
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-neutral-900/90">
+      <div className="space-y-1">
         {left.map((it) => <LinkItem key={it.url} it={it} />)}
       </div>
-      <div className="absolute right-6 bottom-10 w-48 text-sm text-neutral-900/90 text-right space-y-1 pointer-events-auto">
+      <div className="space-y-1">
         {right.map((it) => <LinkItem key={it.url} it={it} />)}
       </div>
     </div>
-  );
+  </div>
+);
+
 }

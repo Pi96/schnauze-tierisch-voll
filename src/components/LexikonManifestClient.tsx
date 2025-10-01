@@ -13,18 +13,21 @@ export default function LexikonManifestClient() {
 
   // aktuellen Ordnerpfad aus URL
 // Pfad ohne trailing slash
+// Pfad aus URL -> ohne /lexikon, trailing slashes weg, decode
 const currentPath = useMemo(() => {
-  const raw = window.location.pathname.replace(/^\/lexikon\/?/, "");
-  const trimmed = raw.replace(/\/+$/, "");
-  return "/" + (trimmed ? decodeURIComponent(trimmed) : "");
+  const raw = window.location.pathname.replace(/^\/+|\/+$/g, ""); // "lexikon/Deutschland"
+  const parts = raw.split("/").slice(1); // alles nach "lexikon"
+  const decoded = parts.map(decodeURIComponent).join("/");
+  return decoded ? `/${decoded}` : "";
 }, [window.location.pathname]);
 
-// gewünschte Datei aus ?file=
+// ?file= sauber decoden
 const fileParam = useMemo(() => {
   const usp = new URLSearchParams(window.location.search);
   const f = usp.get("file");
   return f ? decodeURIComponent(f) : "";
 }, [window.location.search]);
+
 
 useEffect(() => {
   let cancelled = false;
