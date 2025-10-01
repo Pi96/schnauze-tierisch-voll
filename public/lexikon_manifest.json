@@ -1,0 +1,139 @@
+{
+  "generatedAt": 1759320107820,
+  "items": [
+    {
+      "type": "dir",
+      "name": "Ausland",
+      "path": "/Ausland"
+    },
+    {
+      "type": "file",
+      "name": "tuerkei.md",
+      "path": "/Ausland",
+      "url": "/lexikon/Ausland/tuerkei.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "dir",
+      "name": "Deutschland",
+      "path": "/Deutschland"
+    },
+    {
+      "type": "file",
+      "name": "bayern.md",
+      "path": "/Deutschland",
+      "url": "/lexikon/Deutschland/bayern.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Donkai_sportify.jpg",
+      "path": "/Deutschland",
+      "url": "/lexikon/Deutschland/Donkai_sportify.jpg",
+      "size": 75443,
+      "modified": 1748875940371.7273,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "erste-Hilfe.txt.txt",
+      "path": "/",
+      "url": "/lexikon/erste-Hilfe.txt.txt",
+      "size": 29,
+      "modified": 1759318791191.005,
+      "mime": "text/plain"
+    },
+    {
+      "type": "file",
+      "name": "Genderkreis_2.pdf",
+      "path": "/",
+      "url": "/lexikon/Genderkreis_2.pdf",
+      "size": 4977521,
+      "modified": 1751053307000,
+      "mime": "application/pdf"
+    },
+    {
+      "type": "file",
+      "name": "Hinweise für Podcasterin xy.pdf",
+      "path": "/",
+      "url": "/lexikon/Hinweise für Podcasterin xy.pdf",
+      "size": 1378480,
+      "modified": 1755038013000,
+      "mime": "application/pdf"
+    },
+    {
+      "type": "file",
+      "name": "Logo.png",
+      "path": "/",
+      "url": "/lexikon/Logo.png",
+      "size": 7171667,
+      "modified": 1758501069384.3801,
+      "mime": "image/png"
+    },
+    {
+      "type": "dir",
+      "name": "Pferd",
+      "path": "/Pferd"
+    },
+    {
+      "type": "file",
+      "name": "Pferd.png",
+      "path": "/Pferd",
+      "url": "/lexikon/Pferd/Pferd.png",
+      "size": 861583,
+      "modified": 1753323095000,
+      "mime": "image/png"
+    },
+    {
+      "type": "dir",
+      "name": "Schildkroete",
+      "path": "/Schildkroete"
+    },
+    {
+      "type": "file",
+      "name": "schildkroeten_info.md",
+      "path": "/Schildkroete",
+      "url": "/lexikon/Schildkroete/schildkroeten_info.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "dir",
+      "name": "Tauben",
+      "path": "/Tauben"
+    },
+    {
+      "type": "dir",
+      "name": "Tierschutz",
+      "path": "/Tierschutz"
+    },
+    {
+      "type": "dir",
+      "name": "Vermittlung",
+      "path": "/Vermittlung"
+    },
+    {
+      "type": "file",
+      "name": "vorlage.md",
+      "path": "/",
+      "url": "/lexikon/vorlage.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Weiblich.pdf",
+      "path": "/",
+      "url": "/lexikon/Weiblich.pdf",
+      "size": 493457,
+      "modified": 1751337158000,
+      "mime": "application/pdf"
+    }
+  ]
+}
