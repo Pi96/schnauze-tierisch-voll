@@ -15,18 +15,19 @@ export default function LexikonManifestClient() {
 // Pfad ohne trailing slash
 // Pfad aus URL -> ohne /lexikon, trailing slashes weg, decode
 const currentPath = useMemo(() => {
-  const raw = window.location.pathname.replace(/^\/+|\/+$/g, ""); // "lexikon/Deutschland"
-  const parts = raw.split("/").slice(1); // alles nach "lexikon"
-  const decoded = parts.map(decodeURIComponent).join("/");
-  return decoded ? `/${decoded}` : "";
+  const raw = window.location.pathname.replace(/^\/+|\/+$/g, ""); // "lexikon" | "lexikon/Ausland"
+  const parts = raw.split("/");
+  const after = parts[0] === "lexikon" ? parts.slice(1) : parts;
+  const decoded = after.map(decodeURIComponent).join("/");
+  return decoded ? `/${decoded}` : ""; // "/Ausland" oder ""
 }, [window.location.pathname]);
 
-// ?file= sauber decoden
 const fileParam = useMemo(() => {
   const usp = new URLSearchParams(window.location.search);
   const f = usp.get("file");
   return f ? decodeURIComponent(f) : "";
 }, [window.location.search]);
+
 
 
 useEffect(() => {
@@ -127,11 +128,12 @@ useEffect(() => {
                 <li key={f.url}>
 <button
   onClick={() => {
-    setActive(f);
-    const usp = new URLSearchParams(window.location.search);
-    usp.set("file", f.name);
-    window.history.replaceState({}, "", `${window.location.pathname}?${usp.toString()}`);
-  }}
+  setActive(f);
+  const usp = new URLSearchParams(window.location.search);
+  usp.set("file", f.name);
+  const path = window.location.pathname; // bereits /lexikon oder /lexikon/<slug>
+  window.history.replaceState({}, "", `${path}?${usp.toString()}`);
+}}
   className="w-full text-left p-3 rounded-xl bg-neutral-50 hover:bg-neutral-100"
 >
   📄 {f.name}

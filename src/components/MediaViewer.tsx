@@ -16,15 +16,14 @@ export default function MediaViewer({ item }: { item: Item }) {
   }
 
   if (mime === "text/markdown" || isMarkdown(item.name)) {
-    return <MarkdownInline url={item.url} name={item.name} />;
+    return <MarkdownInline url={withRaw(item.url)} name={item.name} />;   // ← hier ?raw
   }
 
   if (mime === "text/plain" || isText(item.name)) {
-    return <PlainTextInline url={item.url} name={item.name} />;
+    return <PlainTextInline url={withRaw(item.url)} name={item.name} />;  // ← hier ?raw
   }
 
   if (mime === "application/pdf" || item.name.toLowerCase().endsWith(".pdf")) {
-    // einfacher Inline-PDF-Embed (pdf.js optional, später)
     return (
       <div className="w-full h-[70vh]">
         <iframe src={item.url} className="w-full h-full rounded-xl" title={item.name} />
@@ -32,12 +31,16 @@ export default function MediaViewer({ item }: { item: Item }) {
     );
   }
 
-  // Fallback: Download/Öffnen
   return (
     <a className="underline" href={item.url} target="_blank" rel="noreferrer">
       {item.name} öffnen
     </a>
   );
+}
+
+function withRaw(url: string) {
+  // erzwinge Roh-Antwort für .md/.txt (um Vite/Astro-Markdown-Transform zu umgehen)
+  return url.includes("?") ? `${url}&raw=1` : `${url}?raw=1`;
 }
 
 function guessMime(name: string) {
@@ -73,7 +76,6 @@ function MarkdownInline({ url, name }: { url: string; name: string }) {
     try {
       const res = await fetch(url); if (!res.ok) throw new Error();
       const md = await res.text();
-      // leichte, dependency-freie Markdown-Konvertierung (Basis). Für „richtig schön“ können wir markdown-it ergänzen.
       const basic = md
         .replace(/^### (.*$)/gim, "<h3>$1</h3>")
         .replace(/^## (.*$)/gim, "<h2>$1</h2>")
