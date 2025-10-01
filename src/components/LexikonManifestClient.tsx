@@ -12,32 +12,48 @@ export default function LexikonManifestClient() {
   const [active, setActive] = useState<Extract<Item, { type: "file" }> | null>(null);
 
   // aktuellen Ordnerpfad aus URL
-  const currentPath = useMemo(() => {
-    const p = window.location.pathname.replace(/^\/lexikon\/?/, "");
-    return "/" + (p ? decodeURIComponent(p) : "");
-  }, [window.location.pathname]);
+// Pfad ohne trailing slash
+const currentPath = useMemo(() => {
+  const raw = window.location.pathname.replace(/^\/lexikon\/?/, "");
+  const trimmed = raw.replace(/\/+$/, "");
+  return "/" + (trimmed ? decodeURIComponent(trimmed) : "");
+}, [window.location.pathname]);
 
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      try {
-        const res = await fetch("/lexikon_manifest.json", { cache: "no-store" });
-        if (!res.ok) throw new Error(res.status + " " + res.statusText);
-        const data = await res.json();
-        if (!cancelled) {
-          const all = Array.isArray(data.items) ? (data.items as Item[]) : [];
-          setItems(all);
-          // wenn im Ordner eine Bilddatei existiert → initial anzeigen
-          const hereFiles = all.filter((i) => i.type === "file" && i.path === currentPath) as Extract<Item, { type: "file" }>[];
-          const firstImg = hereFiles.find(f => (f.mime || "").startsWith("image/"));
-          setActive(firstImg || hereFiles[0] || null);
-        }
-      } catch (e: any) {
-        if (!cancelled) setErr(e?.message || "Manifest konnte nicht geladen werden.");
-      }
-    })();
-    return () => { cancelled = true; };
-  }, [currentPath]);
+// gewünschte Datei aus ?file=
+const fileParam = useMemo(() => {
+  const usp = new URLSearchParams(window.location.search);
+  const f = usp.get("file");
+  return f ? decodeURIComponent(f) : "";
+}, [window.location.search]);
+
+useEffect(() => {
+  let cancelled = false;
+  (async () => {
+    try {
+      const res = await fetch("/lexikon_manifest.json", { cache: "no-store" });
+      if (!res.ok) throw new Error(res.status + " " + res.statusText);
+      const data = await res.json();
+      if (cancelled) return;
+
+      const all = Array.isArray(data.items) ? (data.items as Item[]) : [];
+      setItems(all);
+
+      // Dateien im aktuellen Ordner
+      const hereFiles = all.filter((i) => i.type === "file" && i.path === currentPath) as Extract<Item, { type: "file" }>[];
+
+      // 1) Falls ?file= gesetzt ist, diese Datei wählen (falls vorhanden)
+      const byParam = fileParam ? hereFiles.find(f => f.name === fileParam) : null;
+
+      // 2) sonst erstes Bild, 3) sonst erste Datei
+      const firstImg = hereFiles.find(f => (f.mime || "").startsWith("image/"));
+      setActive(byParam || firstImg || hereFiles[0] || null);
+    } catch (e: any) {
+      if (!cancelled) setErr(e?.message || "Manifest konnte nicht geladen werden.");
+    }
+  })();
+  return () => { cancelled = true; };
+}, [currentPath, fileParam]);
+
 
   if (err) return <div className="text-red-600">Fehler: {err}</div>;
   if (!items.length) return <div>Lade Inhalte…</div>;
@@ -106,13 +122,17 @@ export default function LexikonManifestClient() {
               .sort((a, b) => a.name.localeCompare(b.name, "de"))
               .map((f) => (
                 <li key={f.url}>
-                  <button
-                    onClick={() => setActive(f)}
-                    className="w-full text-left p-3 rounded-xl bg-neutral-50 hover:bg-neutral-100"
-                    title="Oben anzeigen"
-                  >
-                    📄 {f.name}
-                  </button>
+<button
+  onClick={() => {
+    setActive(f);
+    const usp = new URLSearchParams(window.location.search);
+    usp.set("file", f.name);
+    window.history.replaceState({}, "", `${window.location.pathname}?${usp.toString()}`);
+  }}
+  className="w-full text-left p-3 rounded-xl bg-neutral-50 hover:bg-neutral-100"
+>
+  📄 {f.name}
+</button>
                   {/* optional: Direkt öffnen */}
                   <div className="text-xs text-neutral-500">
                     <a href={f.url} target="_blank" rel="noreferrer" className="underline">im neuen Tab öffnen</a>

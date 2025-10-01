@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1759323696065,
+  "generatedAt": 1759326380121,
   "items": [
     {
       "type": "dir",
@@ -89,6 +89,15 @@
       "mime": "image/png"
     },
     {
+      "type": "file",
+      "name": "Weiblich.pdf",
+      "path": "/Pferd",
+      "url": "/lexikon/Pferd/Weiblich.pdf",
+      "size": 493457,
+      "modified": 1751337158000,
+      "mime": "application/pdf"
+    },
+    {
       "type": "dir",
       "name": "Schildkroete",
       "path": "/Schildkroete"
@@ -125,15 +134,6 @@
       "size": 439,
       "modified": 1749416542351.3025,
       "mime": "text/markdown"
-    },
-    {
-      "type": "file",
-      "name": "Weiblich.pdf",
-      "path": "/",
-      "url": "/lexikon/Weiblich.pdf",
-      "size": 493457,
-      "modified": 1751337158000,
-      "mime": "application/pdf"
     }
   ]
 }

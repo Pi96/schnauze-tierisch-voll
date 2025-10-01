@@ -27,15 +27,16 @@ export default function LatestOverlay() {
   const left = useMemo(() => files.slice(0, 5), [files]);
   const right = useMemo(() => files.slice(5, 10), [files]);
 
-  const LinkItem = ({ it }: { it: FileItem }) => {
-    const slug = it.path.split("/").filter(Boolean).join("/");
-    // Link führt zur Ordnerseite (pretty URL), Datei selbst öffnet man dann unten
-    return (
-      <a href={`/lexikon/${slug}`} className="block truncate hover:underline" title={it.name}>
-        {it.name}
-      </a>
-    );
-  };
+const LinkItem = ({ it }: { it: FileItem }) => {
+  const slug = it.path.split("/").filter(Boolean).join("/");
+  // Link zeigt auf den Ordner + gewünschte Datei als ?file=
+  const href = `/lexikon/${slug}?file=${encodeURIComponent(it.name)}`;
+  return (
+    <a href={href} className="block truncate hover:underline" title={it.name}>
+      {it.name}
+    </a>
+  );
+};
 
   if (!files.length) return null;
 
