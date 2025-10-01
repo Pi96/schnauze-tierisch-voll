@@ -1,0 +1,1 @@
+import{j as a}from"./jsx-runtime.CYiYLu1p.js";import"./index.CZlPm10g.js";function l({item:e}){if(!e)return null;const{mime:n,url:r,name:t}=e;return n?.startsWith("image/")?a.jsx("img",{src:r,alt:t,className:"max-h-[60vh] rounded-2xl"}):a.jsxs("a",{href:r,target:"_blank",className:"underline text-blue-700",children:[t," öffnen"]})}export{l as default};

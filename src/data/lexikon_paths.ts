@@ -2,51 +2,37 @@
 export const lexikonPaths = [
   {
     "params": {
-      "slug": [
-        "Ausland"
-      ]
+      "slug": "Ausland"
     }
   },
   {
     "params": {
-      "slug": [
-        "Deutschland"
-      ]
+      "slug": "Deutschland"
     }
   },
   {
     "params": {
-      "slug": [
-        "Pferd"
-      ]
+      "slug": "Pferd"
     }
   },
   {
     "params": {
-      "slug": [
-        "Schildkroete"
-      ]
+      "slug": "Schildkroete"
     }
   },
   {
     "params": {
-      "slug": [
-        "Tauben"
-      ]
+      "slug": "Tauben"
     }
   },
   {
     "params": {
-      "slug": [
-        "Tierschutz"
-      ]
+      "slug": "Tierschutz"
     }
   },
   {
     "params": {
-      "slug": [
-        "Vermittlung"
-      ]
+      "slug": "Vermittlung"
     }
   }
 ] as const;

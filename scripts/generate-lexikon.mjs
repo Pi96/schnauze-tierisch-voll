@@ -40,18 +40,21 @@ async function walk(dir, rel='') {
 }
 
 function derivePaths(items){
-  // Baue alle „schönen“ Routen aus Ordnern zusammen
-  const paths = new Set();
-  items.filter(i=>i.type==='dir').forEach(d=>{
-    const slug = d.path.split('/').filter(Boolean); // ["Pferde","…"]
-    paths.add(JSON.stringify({ params:{ slug } }));
+  const set = new Set();
+
+  // Ordner
+  items.filter(i => i.type === 'dir').forEach(d => {
+    const slugStr = d.path.split('/').filter(Boolean).join('/'); // "Pferd" oder "Pferd/Erste-Hilfe"
+    set.add(JSON.stringify({ params: { slug: slugStr } }));
   });
-  // Auch für Ordner, die nur Dateien enthalten (falls kein dir-Eintrag existiert)
-  items.filter(i=>i.type==='file').forEach(f=>{
-    const slug = f.path.split('/').filter(Boolean);
-    if(slug.length) paths.add(JSON.stringify({ params:{ slug } }));
+
+  // Sicherstellen, dass auch reine Datei-Ordner als Pfad auftauchen
+  items.filter(i => i.type === 'file').forEach(f => {
+    const slugStr = f.path.split('/').filter(Boolean).join('/');
+    if (slugStr) set.add(JSON.stringify({ params: { slug: slugStr } }));
   });
-  return Array.from(paths).map(s=>JSON.parse(s));
+
+  return Array.from(set).map(s => JSON.parse(s));
 }
 
 async function main(){
