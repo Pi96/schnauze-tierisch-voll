@@ -1,13 +1,94 @@
 /** @jsxImportSource react */
-import React from 'react';
-export default function MediaViewer({ item }: { item: { name:string; mime?:string; url?:string } }) {
-if (!item) return null;
-const { mime, url, name } = item;
-if (mime?.startsWith('image/')) {
-return <img src={url} alt={name} className="max-h-[60vh] rounded-2xl"/>;
+import React, { useEffect, useState } from "react";
+
+type Item = { name: string; url: string; mime?: string };
+
+export default function MediaViewer({ item }: { item: Item }) {
+  const mime = item.mime || guessMime(item.name);
+
+  if (mime.startsWith("image/")) {
+    return (
+      <figure>
+        <img src={item.url} alt={item.name} className="max-h-[70vh] w-auto rounded-xl object-contain" />
+        <figcaption className="text-sm text-neutral-600 mt-1">{item.name}</figcaption>
+      </figure>
+    );
+  }
+
+  if (mime === "text/markdown" || isMarkdown(item.name)) {
+    return <MarkdownInline url={item.url} name={item.name} />;
+  }
+
+  if (mime === "text/plain" || isText(item.name)) {
+    return <PlainTextInline url={item.url} name={item.name} />;
+  }
+
+  if (mime === "application/pdf" || item.name.toLowerCase().endsWith(".pdf")) {
+    // einfacher Inline-PDF-Embed (pdf.js optional, später)
+    return (
+      <div className="w-full h-[70vh]">
+        <iframe src={item.url} className="w-full h-full rounded-xl" title={item.name} />
+      </div>
+    );
+  }
+
+  // Fallback: Download/Öffnen
+  return (
+    <a className="underline" href={item.url} target="_blank" rel="noreferrer">
+      {item.name} öffnen
+    </a>
+  );
 }
-// PDF/Text: als Link öffnen (später pdf.js/Markdown)
-return (
-<a href={url} target="_blank" className="underline text-blue-700">{name} öffnen</a>
-);
+
+function guessMime(name: string) {
+  const ext = name.toLowerCase().split(".").pop() || "";
+  const map: Record<string, string> = {
+    png: "image/png", jpg: "image/jpeg", jpeg: "image/jpeg", webp: "image/webp", svg: "image/svg+xml",
+    md: "text/markdown", txt: "text/plain", pdf: "application/pdf",
+    mp3: "audio/mpeg", mp4: "video/mp4"
+  };
+  return map[ext] || "application/octet-stream";
+}
+function isMarkdown(name: string) { return name.toLowerCase().endsWith(".md"); }
+function isText(name: string) { return name.toLowerCase().endsWith(".txt"); }
+
+function PlainTextInline({ url, name }: { url: string; name: string }) {
+  const [text, setText] = useState<string>(""); const [err, setErr] = useState("");
+  useEffect(() => { (async () => {
+    try { const res = await fetch(url); if (!res.ok) throw new Error(); setText(await res.text()); }
+    catch { setErr("Text konnte nicht geladen werden."); }
+  })(); }, [url]);
+  if (err) return <div className="text-red-600">{err}</div>;
+  return (
+    <figure>
+      <pre className="bg-neutral-50 rounded-xl p-4 overflow-auto max-h-[60vh] whitespace-pre-wrap">{text}</pre>
+      <figcaption className="text-sm text-neutral-600 mt-1">{name}</figcaption>
+    </figure>
+  );
+}
+
+function MarkdownInline({ url, name }: { url: string; name: string }) {
+  const [html, setHtml] = useState<string>(""); const [err, setErr] = useState("");
+  useEffect(() => { (async () => {
+    try {
+      const res = await fetch(url); if (!res.ok) throw new Error();
+      const md = await res.text();
+      // leichte, dependency-freie Markdown-Konvertierung (Basis). Für „richtig schön“ können wir markdown-it ergänzen.
+      const basic = md
+        .replace(/^### (.*$)/gim, "<h3>$1</h3>")
+        .replace(/^## (.*$)/gim, "<h2>$1</h2>")
+        .replace(/^# (.*$)/gim, "<h1>$1</h1>")
+        .replace(/\*\*(.*?)\*\*/gim, "<strong>$1</strong>")
+        .replace(/\*(.*?)\*/gim, "<em>$1</em>")
+        .replace(/\n$/gim, "<br />");
+      setHtml(basic);
+    } catch { setErr("Markdown konnte nicht geladen werden."); }
+  })(); }, [url]);
+  if (err) return <div className="text-red-600">{err}</div>;
+  return (
+    <figure>
+      <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: html }} />
+      <figcaption className="text-sm text-neutral-600 mt-1">{name}</figcaption>
+    </figure>
+  );
 }
