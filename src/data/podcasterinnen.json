@@ -1,12 +1,13 @@
 [
-  { "name": "Koppelwendy Michelle", "rolle": "Co-Hostin", "links": { "instagram": "https://www.instagram.com/palido_bonita/" } },
-  { "name": "Tierisch leicht, Ella", "rolle": "Co-Hostin", "links": { "instagram": "https://www.instagram.com/ellaevil/" } },
-  { "name": "Julia, aus dem Tierheim Forchheim", "rolle": "Co-Hostin", "links": { "instagram": "https://www.instagram.com/tschulia2303/" } },
-  { "name": "Jana vom Lebenshof", "rolle": "Co-Hostin", "links": { "instagram": "https://www.instagram.com/janaheilmann/" } },
-  { "name": "Serap & Sabine vom Team Herz & Pfote", "rolle": "Gäste/Contributor", "links": {
+  { "name": "Hostin Pia", "rolle": "Hostin", "icon": "horse", "links": { "instagram": "https://www.instagram.com/haus.of.pi/" } },  
+  { "name": "Koppelwendy Michelle", "rolle": "Co-Hostin", "icon": "horse", "links": { "instagram": "https://www.instagram.com/palido_bonita/" } },
+  { "name": "Tierisch leicht, Ella", "rolle": "Co-Hostin", "icon": "horse", "links": { "instagram": "https://www.instagram.com/ellaevil/" } },
+  { "name": "Julia, aus dem Tierheim Forchheim", "rolle": "Co-Hostin", "icon": "cat2", "links": { "instagram": "https://www.instagram.com/tschulia2303/" } },
+  { "name": "Jana vom Lebenshof", "rolle": "Co-Hostin", "icon": "cow", "links": { "instagram": "https://www.instagram.com/janaheilmann/" } },
+  { "name": "Serap & Sabine von Herz & Pfote", "rolle": "Gäste/Contributor", "icon": "paw", "links": {
       "instagram": "https://www.instagram.com/stormy_1975/",
       "tiktok": "https://www.tiktok.com/@stormythenormy",
       "facebook": "https://www.facebook.com/profile.php?id=61572745708627&locale=de_DE"
   }},
-  { "name": "Mischi", "rolle": "Contributor", "links": { "instagram": "https://www.instagram.com/mischi_mischi/" } }
+  { "name": "Mischi", "rolle": "Contributor", "icon": "turtle2", "links": { "instagram": "https://www.instagram.com/mischi_mischi/" } }
 ]

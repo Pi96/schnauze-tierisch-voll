@@ -7,6 +7,21 @@ export const lexikonPaths = [
   },
   {
     "params": {
+      "slug": "Ausland/Kroatien"
+    }
+  },
+  {
+    "params": {
+      "slug": "Ausland/Rumaenien"
+    }
+  },
+  {
+    "params": {
+      "slug": "Ausland/Tuerkei"
+    }
+  },
+  {
+    "params": {
       "slug": "Deutschland"
     }
   },

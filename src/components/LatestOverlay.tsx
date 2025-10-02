@@ -28,11 +28,12 @@ export default function LatestOverlay() {
   const right = useMemo(() => files.slice(5, 10), [files]);
 
 const LinkItem = ({ it }: { it: FileItem }) => {
-  const clean = (it.path || "").replace(/^\/+/, "").replace(/\/+$/, ""); // "Ausland" | ""
-  const slug  = clean ? clean.split("/").map(encodeURIComponent).join("/") : "";
+  // it.path ist "" (root) oder z. B. "/Ausland"
+  const clean = (it.path || '').replace(/^\/+/, '').replace(/\/+$/, ''); // "Ausland" | ""
+  const slug  = clean ? clean.split('/').map(encodeURIComponent).join('/') : '';
   const href  = slug
     ? `/lexikon/${slug}?file=${encodeURIComponent(it.name)}`
-    : `/lexikon?file=${encodeURIComponent(it.name)}`; // Root-Datei
+    : `/lexikon?file=${encodeURIComponent(it.name)}`; // root-Datei
 
   return (
     <a href={href} className="block truncate hover:underline" title={it.name}>
@@ -40,6 +41,7 @@ const LinkItem = ({ it }: { it: FileItem }) => {
     </a>
   );
 };
+
 
 
 if (!files.length) return null;

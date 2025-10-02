@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1759332064850,
+  "generatedAt": 1759333090518,
   "items": [
     {
       "type": "dir",
@@ -7,10 +7,43 @@
       "path": "/Ausland"
     },
     {
+      "type": "dir",
+      "name": "Kroatien",
+      "path": "/Ausland/Kroatien"
+    },
+    {
+      "type": "file",
+      "name": "kroatien.md",
+      "path": "/Ausland/Kroatien",
+      "url": "/lexikon/Ausland/Kroatien/kroatien.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "dir",
+      "name": "Rumaenien",
+      "path": "/Ausland/Rumaenien"
+    },
+    {
+      "type": "file",
+      "name": "rumaenien.md",
+      "path": "/Ausland/Rumaenien",
+      "url": "/lexikon/Ausland/Rumaenien/rumaenien.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "dir",
+      "name": "Tuerkei",
+      "path": "/Ausland/Tuerkei"
+    },
+    {
       "type": "file",
       "name": "tuerkei.md",
-      "path": "/Ausland",
-      "url": "/lexikon/Ausland/tuerkei.md",
+      "path": "/Ausland/Tuerkei",
+      "url": "/lexikon/Ausland/Tuerkei/tuerkei.md",
       "size": 439,
       "modified": 1749416542351.3025,
       "mime": "text/markdown"
@@ -58,9 +91,18 @@
     },
     {
       "type": "file",
-      "name": "Hinweise für Podcasterin xy.pdf",
+      "name": "Hinweise Podcasterin.pdf",
       "path": "/",
-      "url": "/lexikon/Hinweise für Podcasterin xy.pdf",
+      "url": "/lexikon/Hinweise Podcasterin.pdf",
+      "size": 1378480,
+      "modified": 1755038013000,
+      "mime": "application/pdf"
+    },
+    {
+      "type": "file",
+      "name": "Hinweise Podcasterin2.pdf",
+      "path": "/",
+      "url": "/lexikon/Hinweise Podcasterin2.pdf",
       "size": 1378480,
       "modified": 1755038013000,
       "mime": "application/pdf"
