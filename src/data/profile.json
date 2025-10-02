@@ -1,24 +1,24 @@
 [
-  { "name": "Hostin Pia", "rolle": "Hostin", "icon": "horse_left", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/haus.of.pi/" } },  
-  { "name": "Tierisch leicht, Ella", "rolle": "Co-Hostin", "icon": "horse_left", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/ellaevil/" } },
-  { "name": "Koppelwendy Michelle", "rolle": "Co-Hostin", "icon": "horse_left", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/palido_bonita/" } },
-  { "name": "Julia, aus dem Tierheim Forchheim", "rolle": "Co-Hostin", "icon": "cat2", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tschulia2303/" } },
+  { "name": "Hostin Pia", "rolle": "Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/haus.of.pi/" } },  
+  { "name": "Tierisch leicht, Ella", "rolle": "Co-Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/ellaevil/" } },
+  { "name": "Koppelwendy Michelle", "rolle": "Co-Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/palido_bonita/" } },
+  { "name": "Julia, aus dem Tierheim Forchheim", "rolle": "Co-Hostin", "icon": "cat", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tschulia2303/" } },
   { "name": "Jana vom Lebenshof", "rolle": "Co-Hostin", "icon": "cow", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/janaheilmann/" } },
   { "name": "Serap & Sabine von Herz & Pfote", "rolle": "Gäste/Contributor", "icon": "paw", "bg": "bg-gray-100", "links": {
       "instagram": "https://www.instagram.com/stormy_1975/",
       "tiktok": "https://www.tiktok.com/@stormythenormy",
       "facebook": "https://www.facebook.com/profile.php?id=61572745708627&locale=de_DE"
   }},
-  { "name": "Mischi", "rolle": "Contributor", "icon": "turtle2", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/mischi_mischi/" } },
-  { "name": "Hostin Pia", "rolle": "Hostin", "icon": "horse_left", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/haus.of.pi/" } },  
-  { "name": "Tierisch leicht, Ella", "rolle": "Co-Hostin", "icon": "horse_left", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/ellaevil/" } },
-  { "name": "Koppelwendy Michelle", "rolle": "Co-Hostin", "icon": "horse_left", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/palido_bonita/" } },
-  { "name": "Julia, aus dem Tierheim Forchheim", "rolle": "Co-Hostin", "icon": "cat2", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tschulia2303/" } },
+  { "name": "Mischi", "rolle": "Contributor", "icon": "turtle", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/mischi_mischi/" } },
+  { "name": "Hostin Pia", "rolle": "Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/haus.of.pi/" } },  
+  { "name": "Tierisch leicht, Ella", "rolle": "Co-Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/ellaevil/" } },
+  { "name": "Koppelwendy Michelle", "rolle": "Co-Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/palido_bonita/" } },
+  { "name": "Julia, aus dem Tierheim Forchheim", "rolle": "Co-Hostin", "icon": "cat", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tschulia2303/" } },
   { "name": "Jana vom Lebenshof", "rolle": "Co-Hostin", "icon": "cow", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/janaheilmann/" } },
   { "name": "Serap & Sabine von Herz & Pfote", "rolle": "Gäste/Contributor", "icon": "paw", "bg": "bg-gray-100", "links": {
       "instagram": "https://www.instagram.com/stormy_1975/",
       "tiktok": "https://www.tiktok.com/@stormythenormy",
       "facebook": "https://www.facebook.com/profile.php?id=61572745708627&locale=de_DE"
   }},
-  { "name": "Mischi", "rolle": "Contributor", "icon": "turtle2", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/mischi_mischi/" } }
+  { "name": "Mischi", "rolle": "Contributor", "icon": "turtle", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/mischi_mischi/" } }
 ]
