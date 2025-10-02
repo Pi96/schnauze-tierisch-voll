@@ -1,24 +1,20 @@
 [
-  { "name": "Hostin Pia", "rolle": "Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/haus.of.pi/" } },  
-  { "name": "Tierisch leicht, Ella", "rolle": "Co-Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/ellaevil/" } },
-  { "name": "Koppelwendy Michelle", "rolle": "Co-Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/palido_bonita/" } },
-  { "name": "Julia, aus dem Tierheim Forchheim", "rolle": "Co-Hostin", "icon": "cat", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tschulia2303/" } },
-  { "name": "Jana vom Lebenshof", "rolle": "Co-Hostin", "icon": "cow", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/janaheilmann/" } },
-  { "name": "Serap & Sabine von Herz & Pfote", "rolle": "Gäste/Contributor", "icon": "paw", "bg": "bg-gray-100", "links": {
-      "instagram": "https://www.instagram.com/stormy_1975/",
-      "tiktok": "https://www.tiktok.com/@stormythenormy",
-      "facebook": "https://www.facebook.com/profile.php?id=61572745708627&locale=de_DE"
-  }},
-  { "name": "Mischi", "rolle": "Contributor", "icon": "turtle", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/mischi_mischi/" } },
-  { "name": "Hostin Pia", "rolle": "Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/haus.of.pi/" } },  
-  { "name": "Tierisch leicht, Ella", "rolle": "Co-Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/ellaevil/" } },
-  { "name": "Koppelwendy Michelle", "rolle": "Co-Hostin", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/palido_bonita/" } },
-  { "name": "Julia, aus dem Tierheim Forchheim", "rolle": "Co-Hostin", "icon": "cat", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tschulia2303/" } },
-  { "name": "Jana vom Lebenshof", "rolle": "Co-Hostin", "icon": "cow", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/janaheilmann/" } },
-  { "name": "Serap & Sabine von Herz & Pfote", "rolle": "Gäste/Contributor", "icon": "paw", "bg": "bg-gray-100", "links": {
-      "instagram": "https://www.instagram.com/stormy_1975/",
-      "tiktok": "https://www.tiktok.com/@stormythenormy",
-      "facebook": "https://www.facebook.com/profile.php?id=61572745708627&locale=de_DE"
-  }},
-  { "name": "Mischi", "rolle": "Contributor", "icon": "turtle", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/mischi_mischi/" } }
+  { "name": "ANINOVA", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/aninova/" } },
+  { "name": "stopthekilling", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/stopthekilling.de/" } },
+  { "name": "Nathan Goldblat", "rolle": "Profil", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/nathan.goldblat/" } },
+  { "name": "VETO", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/veto_tierschutz/" } },
+  { "name": "Malte Zierden", "rolle": "Profil", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/maltezierden/" } },
+  { "name": "Tierheim Forchheim", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tierheimforchheim/" } },
+  { "name": "Kenzie Dysli", "rolle": "Profil", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/kenziejoanadysli/" } },
+  { "name": "Tierheim Bamberg", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tierheim_bamberg/" } },
+  { "name": "Tierheim Nürnberg", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tierheimnuernberg/" } },
+  { "name": "Animal Rebellion", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/animalrebellion_de/" } },
+{ "name": "Pat Parelli", "rolle": "Profil", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/patparelli/" } },
+  { "name": "Susanne Lohas", "rolle": "Profil", "icon": "horse", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/susanne_lohas/" } },
+  { "name": "Martin Rütter", "rolle": "Profil", "icon": "dog", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/martinruetter_official/" } },
+  { "name": "Animal Equality Germany", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/animalequality_de/" } },
+  { "name": "House of Rescue", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/house.of.rescue/" } },
+  { "name": "SOKO Tierschutz", "rolle": "Verein", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/soko_tierschutz/" } },
+  { "name": "WWF Deutschland", "rolle": "Verein", "icon": "zoo", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/wwf_deutschland/" } },
+  { "name": "Tierschutzpartei Bayern", "rolle": "Partei", "icon": "paw", "bg": "bg-gray-100", "links": { "instagram": "https://www.instagram.com/tierschutzpartei_bayern/" } }
 ]

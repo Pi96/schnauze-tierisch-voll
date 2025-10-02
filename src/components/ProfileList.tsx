@@ -10,61 +10,75 @@ type Links = Partial<{
 
 type Profile = {
   name: string;
-  icon?: string; // z.B. "horse", "dog", "pferd", "hund" ...
+  icon?: string; // "horse" | "pferd" | "horse.svg" | ...
   bg?: string;   // z.B. "bg-green-300"
   links?: Links;
 };
 
-// Kategorie-Icons & Legende (+ Aliasse zuordnen)
+// Kategorien + Aliasse (de/en & optional .svg)
 const CATEGORIES = [
-  { key: 'turtle', icon: '/images/icons/turtle.svg', legend: 'Schildkröte · Reptil', aliases: ['turtle', 'schildkroete', 'schildkröte'] },
-  { key: 'horse',  icon: '/images/icons/horse.svg',  legend: 'Stall · Reiten · Pferd', aliases: ['horse', 'pferd', 'reiten', 'stall'] },
-  { key: 'dog',    icon: '/images/icons/dog.svg',    legend: 'Hund · Training',       aliases: ['dog', 'hund'] },
-  { key: 'paw',    icon: '/images/icons/paw.svg',    legend: 'Hund · Katze · Tierschutz', aliases: ['paw', 'pfote', 'hund', 'katze'] },
-  { key: 'cat',    icon: '/images/icons/cat.svg',    legend: 'Katze',                  aliases: ['cat', 'katze'] },
-  { key: 'cow',    icon: '/images/icons/cow.svg',    legend: 'Kuh · Stall · Landwirtschaft', aliases: ['cow', 'kuh', 'hof', 'stall', 'lebenshof'] },
-  { key: 'zoo',    icon: '/images/icons/zoo.svg',    legend: 'Zoo · Wildtiere',        aliases: ['zoo', 'wild', 'wildtiere'] },
+  { key: 'paw',    icon: '/images/icons/paw.svg',    legend: 'Tierschutz', aliases: ['paw','pfote','hund','katze'] },
+  { key: 'cat',    icon: '/images/icons/cat.svg',    legend: 'Katze',                  aliases: ['cat','katze'] },
+  { key: 'cow',    icon: '/images/icons/cow.svg',    legend: 'Kuh · Stall · Landwirtschaft', aliases: ['cow','kuh','hof','stall','lebenshof'] },
+  { key: 'zoo',    icon: '/images/icons/zoo.svg',    legend: 'Zoo · Wildtiere',        aliases: ['zoo','wild','wildtiere'] },
+  { key: 'turtle', icon: '/images/icons/turtle.svg', legend: 'Schildkröte · Reptil', aliases: ['turtle','schildkroete','schildkröte'] },
+  { key: 'horse',  icon: '/images/icons/horse.svg',  legend: 'Stall · Reiten · Pferd', aliases: ['horse','pferd','reiten','stall'] },
+  { key: 'dog',    icon: '/images/icons/dog.svg',    legend: 'Hund · Training',       aliases: ['dog','hund'] },
 ] as const;
 
 type CategoryKey = typeof CATEGORIES[number]['key'];
 
+// JSON-icon → normalisierten CategoryKey mappen
+const iconToCategoryKey = (icon?: string): CategoryKey | null => {
+  if (!icon) return null;
+  const val = icon.replace('.svg', '').trim().toLowerCase();
+  const found = CATEGORIES.find(c => c.key === val || c.aliases.includes(val));
+  return found ? found.key : null;
+};
+
 export default function ProfileList() {
-  // ✅ Start: KEINE Kategorie aktiv → alle Profile sichtbar
+  // Start: keine Kategorie aktiv → ALLE anzeigen
   const [active, setActive] = useState<Record<CategoryKey, boolean>>(
     () => CATEGORIES.reduce((acc, c) => ({ ...acc, [c.key]: false }), {} as Record<CategoryKey, boolean>)
   );
 
   const toggle = (key: CategoryKey) =>
-    setActive((prev) => ({ ...prev, [key]: !prev[key] }));
+    setActive(prev => ({ ...prev, [key]: !prev[key] }));
 
   const activeList = useMemo(
     () => (Object.entries(active).filter(([, on]) => on).map(([k]) => k) as CategoryKey[]),
     [active]
   );
 
-  // Mappe p.icon (Dateiname/Begriff) auf eine Category
-  const iconToCategoryKey = (icon?: string): CategoryKey | null => {
-    if (!icon) return null;
-    const val = icon.replace('.svg', '').toLowerCase(); // "pferd.svg" → "pferd"
-    const found = CATEGORIES.find(c => c.key === val || c.aliases.includes(val));
-    return found ? found.key : null;
-  };
+  // 1) Alphabetisch sortierte, deduplizierte Basisliste (nach Name, case-insensitive)
+  const sorted = useMemo(() => {
+    const seen = new Set<string>();
+    return (profiles as Profile[])
+      .filter(p => {
+        const key = (p.name || '').trim().toLowerCase();
+        if (!key) return false;
+        if (seen.has(key)) return false; // Duplikate im JSON abfangen
+        seen.add(key);
+        return true;
+      })
+      .slice()
+      .sort((a, b) => a.name.localeCompare(b.name, 'de', { sensitivity: 'base' }));
+  }, []);
 
-  // ✅ Filter: keine Auswahl → ALLE; sonst nur passende Kategorien
+  // 2) Filter anwenden: keine Auswahl → alle; sonst nur passende Icons
   const filtered = useMemo(() => {
-    const data = profiles as Profile[];
-    if (activeList.length === 0) return data;
-    return data.filter((p) => {
+    if (activeList.length === 0) return sorted;
+    return sorted.filter(p => {
       const key = iconToCategoryKey(p.icon);
       return key ? activeList.includes(key) : false;
     });
-  }, [activeList]);
+  }, [sorted, activeList]);
 
   return (
     <section className="space-y-4">
       {/* Filter-Icons */}
       <div className="flex flex-wrap items-center gap-2">
-        {CATEGORIES.map((c) => (
+        {CATEGORIES.map(c => (
           <button
             key={c.key}
             type="button"
@@ -84,7 +98,7 @@ export default function ProfileList() {
       {/* Legende */}
       <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-600">
         <span className="font-medium">Legende:</span>
-        {CATEGORIES.map((c) => (
+        {CATEGORIES.map(c => (
           <span key={c.key} className="inline-flex items-center gap-2">
             <img src={c.icon} alt="" className="w-4 h-4" />
             <span>{c.legend}</span>
@@ -92,20 +106,21 @@ export default function ProfileList() {
         ))}
       </div>
 
-      {/* Liste: 1 Profil pro Zeile, nach 10 Zeilen Scroll */}
+      {/* Liste: 1 Profil pro Zeile, nach ~10 Zeilen Scroll */}
       <div className="space-y-3 max-h-[560px] overflow-y-auto pr-1">
-        {(filtered as Profile[]).map((p) => {
+        {filtered.map(p => {
           const bg = p.bg || 'bg-gray-200';
+          const iconName = (p.icon || '').replace('.svg','');
           return (
             <div
-              key={p.name}
+              key={`${p.name}__${iconName}`}
               className={`flex items-center justify-between gap-3 ${bg} rounded-xl shadow-sm px-3 py-2 min-h-14`}
             >
               {/* Links: Tier/Icon + Name */}
               <div className="flex items-center gap-3 min-w-0">
                 {p.icon && (
                   <img
-                    src={`/images/icons/${p.icon.replace('.svg','')}.svg`}
+                    src={`/images/icons/${iconName}.svg`}
                     alt=""
                     className="w-6 h-6 object-contain"
                   />
