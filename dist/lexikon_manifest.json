@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1763726383301,
+  "generatedAt": 1763729584375,
   "items": [
     {
       "type": "dir",
@@ -53,9 +53,18 @@
       "name": "tuerkei.md",
       "path": "/Ausland/Tuerkei",
       "url": "/lexikon/Ausland/Tuerkei/tuerkei.md",
-      "size": 439,
-      "modified": 1749416542351.3025,
+      "size": 3456,
+      "modified": 1763729348168.5088,
       "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Tuerkei.mp4",
+      "path": "/Ausland/Tuerkei",
+      "url": "/lexikon/Ausland/Tuerkei/Tuerkei.mp4",
+      "size": 12223731,
+      "modified": 1763628820000,
+      "mime": "video/mp4"
     },
     {
       "type": "dir",
