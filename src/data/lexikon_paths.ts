@@ -37,17 +37,7 @@ export const lexikonPaths = [
   },
   {
     "params": {
-      "slug": "Tauben"
-    }
-  },
-  {
-    "params": {
       "slug": "Tierschutz"
-    }
-  },
-  {
-    "params": {
-      "slug": "Vermittlung"
     }
   }
 ] as const;

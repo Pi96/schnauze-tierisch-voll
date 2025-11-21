@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1759420151856,
+  "generatedAt": 1763682033099,
   "items": [
     {
       "type": "dir",
@@ -55,21 +55,21 @@
     },
     {
       "type": "file",
-      "name": "bayern.md",
+      "name": "Schnauzenschutz-Lied.md",
       "path": "/Deutschland",
-      "url": "/lexikon/Deutschland/bayern.md",
-      "size": 439,
-      "modified": 1749416542351.3025,
+      "url": "/lexikon/Deutschland/Schnauzenschutz-Lied.md",
+      "size": 1972,
+      "modified": 1763677942439.1606,
       "mime": "text/markdown"
     },
     {
       "type": "file",
-      "name": "Donkai_sportify.jpg",
+      "name": "Schnauzenschutz.mp3",
       "path": "/Deutschland",
-      "url": "/lexikon/Deutschland/Donkai_sportify.jpg",
-      "size": 75443,
-      "modified": 1748875940371.7273,
-      "mime": "image/jpeg"
+      "url": "/lexikon/Deutschland/Schnauzenschutz.mp3",
+      "size": 4153289,
+      "modified": 1763677942462.7065,
+      "mime": "audio/mpeg"
     },
     {
       "type": "file",
@@ -77,17 +77,8 @@
       "path": "/",
       "url": "/lexikon/erste-Hilfe.txt",
       "size": 29,
-      "modified": 1759318791191.005,
+      "modified": 1763677942532.8933,
       "mime": "text/plain"
-    },
-    {
-      "type": "file",
-      "name": "Genderkreis_2.pdf",
-      "path": "/",
-      "url": "/lexikon/Genderkreis_2.pdf",
-      "size": 4977521,
-      "modified": 1751053307000,
-      "mime": "application/pdf"
     },
     {
       "type": "file",
@@ -95,25 +86,16 @@
       "path": "/",
       "url": "/lexikon/Hinweise Podcasterin.pdf",
       "size": 1378480,
-      "modified": 1755038013000,
+      "modified": 1763677942470.2195,
       "mime": "application/pdf"
     },
     {
       "type": "file",
-      "name": "Hinweise Podcasterin2.pdf",
+      "name": "Logo Schnauze tierisch voll!.png",
       "path": "/",
-      "url": "/lexikon/Hinweise Podcasterin2.pdf",
-      "size": 1378480,
-      "modified": 1755038013000,
-      "mime": "application/pdf"
-    },
-    {
-      "type": "file",
-      "name": "Logo.png",
-      "path": "/",
-      "url": "/lexikon/Logo.png",
+      "url": "/lexikon/Logo Schnauze tierisch voll!.png",
       "size": 7171667,
-      "modified": 1758501069384.3801,
+      "modified": 1763677942492.815,
       "mime": "image/png"
     },
     {
@@ -136,7 +118,7 @@
       "path": "/Pferd",
       "url": "/lexikon/Pferd/Weiblich.pdf",
       "size": 493457,
-      "modified": 1751337158000,
+      "modified": 1763677942496.322,
       "mime": "application/pdf"
     },
     {
@@ -150,13 +132,8 @@
       "path": "/Schildkroete",
       "url": "/lexikon/Schildkroete/schildkroeten_info.md",
       "size": 439,
-      "modified": 1749416542351.3025,
+      "modified": 1763677942496.322,
       "mime": "text/markdown"
-    },
-    {
-      "type": "dir",
-      "name": "Tauben",
-      "path": "/Tauben"
     },
     {
       "type": "dir",
@@ -164,9 +141,58 @@
       "path": "/Tierschutz"
     },
     {
-      "type": "dir",
-      "name": "Vermittlung",
-      "path": "/Vermittlung"
+      "type": "file",
+      "name": "faq_katzenschutzverordnung.pdf",
+      "path": "/Tierschutz",
+      "url": "/lexikon/Tierschutz/faq_katzenschutzverordnung.pdf",
+      "size": 239200,
+      "modified": 1763677942531.886,
+      "mime": "application/pdf"
+    },
+    {
+      "type": "file",
+      "name": "Forchheim, heb die Hand.mp3",
+      "path": "/Tierschutz",
+      "url": "/lexikon/Tierschutz/Forchheim, heb die Hand.mp3",
+      "size": 5533845,
+      "modified": 1763677942525.372,
+      "mime": "audio/mpeg"
+    },
+    {
+      "type": "file",
+      "name": "Katzenschutz-Lied.md",
+      "path": "/Tierschutz",
+      "url": "/lexikon/Tierschutz/Katzenschutz-Lied.md",
+      "size": 2374,
+      "modified": 1763677942526.377,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Katzenschutzverordnung.png",
+      "path": "/Tierschutz",
+      "url": "/lexikon/Tierschutz/Katzenschutzverordnung.png",
+      "size": 564942,
+      "modified": 1763677942530.3816,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Nicht die Augen schließen.mp3",
+      "path": "/Tierschutz",
+      "url": "/lexikon/Tierschutz/Nicht die Augen schließen.mp3",
+      "size": 3893469,
+      "modified": 1756138800124.7415,
+      "mime": "audio/mpeg"
+    },
+    {
+      "type": "file",
+      "name": "Tierschutz-Lied.md",
+      "path": "/Tierschutz",
+      "url": "/lexikon/Tierschutz/Tierschutz-Lied.md",
+      "size": 2066,
+      "modified": 1763475070490.0334,
+      "mime": "text/markdown"
     },
     {
       "type": "file",
@@ -174,7 +200,7 @@
       "path": "/",
       "url": "/lexikon/vorlage.md",
       "size": 439,
-      "modified": 1749416542351.3025,
+      "modified": 1763677942532.8933,
       "mime": "text/markdown"
     }
   ]
