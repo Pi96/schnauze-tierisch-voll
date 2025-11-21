@@ -27,17 +27,77 @@ export const lexikonPaths = [
   },
   {
     "params": {
+      "slug": "Deutschland/Hund"
+    }
+  },
+  {
+    "params": {
+      "slug": "Deutschland/Igel"
+    }
+  },
+  {
+    "params": {
+      "slug": "Deutschland/Maulkorb"
+    }
+  },
+  {
+    "params": {
+      "slug": "Deutschland/Nutztier"
+    }
+  },
+  {
+    "params": {
+      "slug": "Deutschland/Tauben"
+    }
+  },
+  {
+    "params": {
+      "slug": "Deutschland/Vögel"
+    }
+  },
+  {
+    "params": {
       "slug": "Pferd"
     }
   },
   {
     "params": {
-      "slug": "Schildkroete"
+      "slug": "Sonstiges"
+    }
+  },
+  {
+    "params": {
+      "slug": "Sonstiges/Podcasterinnen"
     }
   },
   {
     "params": {
       "slug": "Tierschutz"
+    }
+  },
+  {
+    "params": {
+      "slug": "Tierschutz/Artengeschützte Tiere"
+    }
+  },
+  {
+    "params": {
+      "slug": "Tierschutz/Herz & Pfote"
+    }
+  },
+  {
+    "params": {
+      "slug": "Tierschutz/Katzenschutz"
+    }
+  },
+  {
+    "params": {
+      "slug": "Tierschutz/Tierheim Forchheim"
+    }
+  },
+  {
+    "params": {
+      "slug": "Tierschutz/Tierleid"
     }
   }
 ] as const;

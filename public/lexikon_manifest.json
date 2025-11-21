@@ -1,10 +1,19 @@
 {
-  "generatedAt": 1763682033099,
+  "generatedAt": 1763723128810,
   "items": [
     {
       "type": "dir",
       "name": "Ausland",
       "path": "/Ausland"
+    },
+    {
+      "type": "file",
+      "name": "Hundeschutz.png",
+      "path": "/Ausland",
+      "url": "/lexikon/Ausland/Hundeschutz.png",
+      "size": 2925949,
+      "modified": 1760974792752.71,
+      "mime": "image/png"
     },
     {
       "type": "dir",
@@ -54,6 +63,260 @@
       "path": "/Deutschland"
     },
     {
+      "type": "dir",
+      "name": "Hund",
+      "path": "/Deutschland/Hund"
+    },
+    {
+      "type": "file",
+      "name": "Doggolinos.jpg",
+      "path": "/Deutschland/Hund",
+      "url": "/lexikon/Deutschland/Hund/Doggolinos.jpg",
+      "size": 177484,
+      "modified": 1711930855307.2583,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Koda und Maja (1).jpg",
+      "path": "/Deutschland/Hund",
+      "url": "/lexikon/Deutschland/Hund/Koda und Maja (1).jpg",
+      "size": 4295227,
+      "modified": 1760389980000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Koda und Maja (2).jpg",
+      "path": "/Deutschland/Hund",
+      "url": "/lexikon/Deutschland/Hund/Koda und Maja (2).jpg",
+      "size": 4270514,
+      "modified": 1760382963000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Koda.jpg",
+      "path": "/Deutschland/Hund",
+      "url": "/lexikon/Deutschland/Hund/Koda.jpg",
+      "size": 33028,
+      "modified": 1759583720667.4575,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Sharin.jpg",
+      "path": "/Deutschland/Hund",
+      "url": "/lexikon/Deutschland/Hund/Sharin.jpg",
+      "size": 3304769,
+      "modified": 1763550058000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Sheila.png",
+      "path": "/Deutschland/Hund",
+      "url": "/lexikon/Deutschland/Hund/Sheila.png",
+      "size": 2422415,
+      "modified": 1763673421001.997,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Staatskanzlei Hunderecht Listenhunde.png",
+      "path": "/Deutschland/Hund",
+      "url": "/lexikon/Deutschland/Hund/Staatskanzlei Hunderecht Listenhunde.png",
+      "size": 701797,
+      "modified": 1758146681339.0488,
+      "mime": "image/png"
+    },
+    {
+      "type": "dir",
+      "name": "Igel",
+      "path": "/Deutschland/Igel"
+    },
+    {
+      "type": "file",
+      "name": "Igel.jpg",
+      "path": "/Deutschland/Igel",
+      "url": "/lexikon/Deutschland/Igel/Igel.jpg",
+      "size": 269253,
+      "modified": 1759687647227.7944,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Igelschutz.jpg",
+      "path": "/Deutschland/Igel",
+      "url": "/lexikon/Deutschland/Igel/Igelschutz.jpg",
+      "size": 183018,
+      "modified": 1759826435000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "dir",
+      "name": "Maulkorb",
+      "path": "/Deutschland/Maulkorb"
+    },
+    {
+      "type": "file",
+      "name": "Guter Maulkorb (1).jpg",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Guter Maulkorb (1).jpg",
+      "size": 277618,
+      "modified": 1759845260000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Guter Maulkorb (2).jpg",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Guter Maulkorb (2).jpg",
+      "size": 327822,
+      "modified": 1759845260000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Maulkorb.md",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Maulkorb.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Schlechter Maulkorb (1).jpg",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Schlechter Maulkorb (1).jpg",
+      "size": 1630238,
+      "modified": 1759845537000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Schlechter Maulkorb (2).jpg",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Schlechter Maulkorb (2).jpg",
+      "size": 1940351,
+      "modified": 1759845514000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Schlechter Maulkorb (3).jpg",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Schlechter Maulkorb (3).jpg",
+      "size": 1845401,
+      "modified": 1759845516000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Schlechter Maulkorb (4).jpg",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Schlechter Maulkorb (4).jpg",
+      "size": 1639717,
+      "modified": 1759845527000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Schlechter Maulkorb (5).jpg",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Schlechter Maulkorb (5).jpg",
+      "size": 1944186,
+      "modified": 1759845530000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Schlechter Maulkorb (6).jpg",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Schlechter Maulkorb (6).jpg",
+      "size": 2196767,
+      "modified": 1759845534000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Schnauzenschutz-Liedtext.md",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Schnauzenschutz-Liedtext.md",
+      "size": 1972,
+      "modified": 1763474975977.4814,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Schnauzenschutzlied.mp3",
+      "path": "/Deutschland/Maulkorb",
+      "url": "/lexikon/Deutschland/Maulkorb/Schnauzenschutzlied.mp3",
+      "size": 4153289,
+      "modified": 1758144652900.797,
+      "mime": "audio/mpeg"
+    },
+    {
+      "type": "dir",
+      "name": "Nutztier",
+      "path": "/Deutschland/Nutztier"
+    },
+    {
+      "type": "file",
+      "name": "Bonnie.png",
+      "path": "/Deutschland/Nutztier",
+      "url": "/lexikon/Deutschland/Nutztier/Bonnie.png",
+      "size": 5943984,
+      "modified": 1760656085040.6086,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Bonny & Lola Zeichnung.jpg",
+      "path": "/Deutschland/Nutztier",
+      "url": "/lexikon/Deutschland/Nutztier/Bonny & Lola Zeichnung.jpg",
+      "size": 253257,
+      "modified": 1711923824904.89,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Lola und Jana.png",
+      "path": "/Deutschland/Nutztier",
+      "url": "/lexikon/Deutschland/Nutztier/Lola und Jana.png",
+      "size": 432123,
+      "modified": 1759578109050.3186,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Molly.jpg",
+      "path": "/Deutschland/Nutztier",
+      "url": "/lexikon/Deutschland/Nutztier/Molly.jpg",
+      "size": 117762,
+      "modified": 1759578341937.83,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Momo und Jana.png",
+      "path": "/Deutschland/Nutztier",
+      "url": "/lexikon/Deutschland/Nutztier/Momo und Jana.png",
+      "size": 534865,
+      "modified": 1759578119159.488,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Momo.jpg",
+      "path": "/Deutschland/Nutztier",
+      "url": "/lexikon/Deutschland/Nutztier/Momo.jpg",
+      "size": 3371271,
+      "modified": 1723454042000,
+      "mime": "image/jpeg"
+    },
+    {
       "type": "file",
       "name": "Schnauzenschutz-Lied.md",
       "path": "/Deutschland",
@@ -72,36 +335,100 @@
       "mime": "audio/mpeg"
     },
     {
-      "type": "file",
-      "name": "erste-Hilfe.txt",
-      "path": "/",
-      "url": "/lexikon/erste-Hilfe.txt",
-      "size": 29,
-      "modified": 1763677942532.8933,
-      "mime": "text/plain"
+      "type": "dir",
+      "name": "Tauben",
+      "path": "/Deutschland/Tauben"
     },
     {
       "type": "file",
-      "name": "Hinweise Podcasterin.pdf",
-      "path": "/",
-      "url": "/lexikon/Hinweise Podcasterin.pdf",
-      "size": 1378480,
-      "modified": 1763677942470.2195,
-      "mime": "application/pdf"
+      "name": "Taubenleid.md",
+      "path": "/Deutschland/Tauben",
+      "url": "/lexikon/Deutschland/Tauben/Taubenleid.md",
+      "size": 447,
+      "modified": 1763672789267.8936,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "dir",
+      "name": "Vögel",
+      "path": "/Deutschland/Vögel"
     },
     {
       "type": "file",
-      "name": "Logo Schnauze tierisch voll!.png",
-      "path": "/",
-      "url": "/lexikon/Logo Schnauze tierisch voll!.png",
-      "size": 7171667,
-      "modified": 1763677942492.815,
+      "name": "Enten.png",
+      "path": "/Deutschland/Vögel",
+      "url": "/lexikon/Deutschland/Vögel/Enten.png",
+      "size": 2401858,
+      "modified": 1759885620722.1106,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Gänse.png",
+      "path": "/Deutschland/Vögel",
+      "url": "/lexikon/Deutschland/Vögel/Gänse.png",
+      "size": 2237086,
+      "modified": 1759885532926.5354,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Huhn.jpg",
+      "path": "/Deutschland/Vögel",
+      "url": "/lexikon/Deutschland/Vögel/Huhn.jpg",
+      "size": 304097,
+      "modified": 1757082694447.3352,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Kanadagans.jpg",
+      "path": "/Deutschland/Vögel",
+      "url": "/lexikon/Deutschland/Vögel/Kanadagans.jpg",
+      "size": 1202227,
+      "modified": 1747587860000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Raben.png",
+      "path": "/Deutschland/Vögel",
+      "url": "/lexikon/Deutschland/Vögel/Raben.png",
+      "size": 1832412,
+      "modified": 1759887081682.991,
       "mime": "image/png"
     },
     {
       "type": "dir",
       "name": "Pferd",
       "path": "/Pferd"
+    },
+    {
+      "type": "file",
+      "name": "Eingestallt.png",
+      "path": "/Pferd",
+      "url": "/lexikon/Pferd/Eingestallt.png",
+      "size": 2993620,
+      "modified": 1757946452978.4238,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Koppelwendys.png",
+      "path": "/Pferd",
+      "url": "/lexikon/Pferd/Koppelwendys.png",
+      "size": 4108825,
+      "modified": 1758837569421.9583,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Michelle und Bonny.JPG",
+      "path": "/Pferd",
+      "url": "/lexikon/Pferd/Michelle und Bonny.JPG",
+      "size": 6799092,
+      "modified": 1609155228000,
+      "mime": "image/jpeg"
     },
     {
       "type": "file",
@@ -114,26 +441,283 @@
     },
     {
       "type": "file",
-      "name": "Weiblich.pdf",
+      "name": "Pferde.md",
       "path": "/Pferd",
-      "url": "/lexikon/Pferd/Weiblich.pdf",
-      "size": 493457,
-      "modified": 1763677942496.322,
-      "mime": "application/pdf"
-    },
-    {
-      "type": "dir",
-      "name": "Schildkroete",
-      "path": "/Schildkroete"
+      "url": "/lexikon/Pferd/Pferde.md",
+      "size": 706,
+      "modified": 1763671502157.0422,
+      "mime": "text/markdown"
     },
     {
       "type": "file",
-      "name": "schildkroeten_info.md",
-      "path": "/Schildkroete",
-      "url": "/lexikon/Schildkroete/schildkroeten_info.md",
+      "name": "Ronny & Pia.jpg",
+      "path": "/Pferd",
+      "url": "/lexikon/Pferd/Ronny & Pia.jpg",
+      "size": 256462,
+      "modified": 1763670409166.1938,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "dir",
+      "name": "Sonstiges",
+      "path": "/Sonstiges"
+    },
+    {
+      "type": "file",
+      "name": "Erste Hilfe.md",
+      "path": "/Sonstiges",
+      "url": "/lexikon/Sonstiges/Erste Hilfe.md",
       "size": 439,
-      "modified": 1763677942496.322,
+      "modified": 1749416542351.3025,
       "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Logo Schnauze tierisch voll!.png",
+      "path": "/Sonstiges",
+      "url": "/lexikon/Sonstiges/Logo Schnauze tierisch voll!.png",
+      "size": 7171667,
+      "modified": 1758501069384.3801,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Logo.png",
+      "path": "/Sonstiges",
+      "url": "/lexikon/Sonstiges/Logo.png",
+      "size": 2852221,
+      "modified": 1760306813271.2993,
+      "mime": "image/png"
+    },
+    {
+      "type": "dir",
+      "name": "Podcasterinnen",
+      "path": "/Sonstiges/Podcasterinnen"
+    },
+    {
+      "type": "file",
+      "name": "Donkai App.png",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Donkai App.png",
+      "size": 206131,
+      "modified": 1736646171870.1353,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Donkai Musik.png",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Donkai Musik.png",
+      "size": 213583,
+      "modified": 1736642891868.1772,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Hinweise Podcasterin.pdf",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Hinweise Podcasterin.pdf",
+      "size": 4293305,
+      "modified": 1763674753374.0742,
+      "mime": "application/pdf"
+    },
+    {
+      "type": "file",
+      "name": "Hunde (2).jpg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Hunde (2).jpg",
+      "size": 3326248,
+      "modified": 1755517712000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Hunde.jpeg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Hunde.jpeg",
+      "size": 1964836,
+      "modified": 1755517733000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Julia als Strauß 2.png",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Julia als Strauß 2.png",
+      "size": 1785708,
+      "modified": 1761948562288.9275,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Julia als Strauß.png",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Julia als Strauß.png",
+      "size": 1742675,
+      "modified": 1761781814535.7244,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Julia als Tyranus.png",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Julia als Tyranus.png",
+      "size": 2239645,
+      "modified": 1761783577443.0696,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Julia und Pia.png",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Julia und Pia.png",
+      "size": 2804911,
+      "modified": 1761176195929.7131,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Julia, Koda und Pia.png",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Julia, Koda und Pia.png",
+      "size": 2687603,
+      "modified": 1759583507756.9697,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Oberfranken Girls.png",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Oberfranken Girls.png",
+      "size": 3470522,
+      "modified": 1763672860986.82,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Pia (2).JPG",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Pia (2).JPG",
+      "size": 8160768,
+      "modified": 1747339973000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Pia als Schlange.png",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Pia als Schlange.png",
+      "size": 2550379,
+      "modified": 1761949812700.0085,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Pia.jpg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Pia.jpg",
+      "size": 57492,
+      "modified": 1755268819257.6816,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Podcastsessel (2).jpg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Podcastsessel (2).jpg",
+      "size": 4082527,
+      "modified": 1754925009000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Podcastsessel (3).jpg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Podcastsessel (3).jpg",
+      "size": 3634585,
+      "modified": 1754682530000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Podcastsessel.jpg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Podcastsessel.jpg",
+      "size": 3918729,
+      "modified": 1757084314000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Seasons Fürth (2).jpeg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Seasons Fürth (2).jpeg",
+      "size": 2097926,
+      "modified": 1754491460000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Seasons Fürth (4).jpg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Seasons Fürth (4).jpg",
+      "size": 2732428,
+      "modified": 1750846203000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Seasons Fürth.jpg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Seasons Fürth.jpg",
+      "size": 3243923,
+      "modified": 1750846236000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Tshirt Straßenhunde Vorbestellung.pdf",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Tshirt Straßenhunde Vorbestellung.pdf",
+      "size": 3037879,
+      "modified": 1760313257510.463,
+      "mime": "application/pdf"
+    },
+    {
+      "type": "file",
+      "name": "Webcam.jpg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Webcam.jpg",
+      "size": 2818502,
+      "modified": 1754118190000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Webinarraum.jpg",
+      "path": "/Sonstiges/Podcasterinnen",
+      "url": "/lexikon/Sonstiges/Podcasterinnen/Webinarraum.jpg",
+      "size": 2396571,
+      "modified": 1754118241000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Vorlage.md",
+      "path": "/Sonstiges",
+      "url": "/lexikon/Sonstiges/Vorlage.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Walberla.jpg",
+      "path": "/Sonstiges",
+      "url": "/lexikon/Sonstiges/Walberla.jpg",
+      "size": 2555668,
+      "modified": 1758502428000,
+      "mime": "image/jpeg"
     },
     {
       "type": "dir",
@@ -141,39 +725,162 @@
       "path": "/Tierschutz"
     },
     {
+      "type": "dir",
+      "name": "Artengeschützte Tiere",
+      "path": "/Tierschutz/Artengeschützte Tiere"
+    },
+    {
+      "type": "file",
+      "name": "Artengeschützte Tiere.md",
+      "path": "/Tierschutz/Artengeschützte Tiere",
+      "url": "/lexikon/Tierschutz/Artengeschützte Tiere/Artengeschützte Tiere.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Elche.png",
+      "path": "/Tierschutz/Artengeschützte Tiere",
+      "url": "/lexikon/Tierschutz/Artengeschützte Tiere/Elche.png",
+      "size": 960370,
+      "modified": 1759577455063.6628,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Schildkröte.md",
+      "path": "/Tierschutz/Artengeschützte Tiere",
+      "url": "/lexikon/Tierschutz/Artengeschützte Tiere/Schildkröte.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Schildkröten-Lied.md",
+      "path": "/Tierschutz/Artengeschützte Tiere",
+      "url": "/lexikon/Tierschutz/Artengeschützte Tiere/Schildkröten-Lied.md",
+      "size": 112,
+      "modified": 1763668910573.6062,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "dir",
+      "name": "Herz & Pfote",
+      "path": "/Tierschutz/Herz & Pfote"
+    },
+    {
+      "type": "file",
+      "name": "Harry der Türke und Pia.jpg",
+      "path": "/Tierschutz/Herz & Pfote",
+      "url": "/lexikon/Tierschutz/Herz & Pfote/Harry der Türke und Pia.jpg",
+      "size": 457477,
+      "modified": 1760873925000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Leyla und Chako.jpg",
+      "path": "/Tierschutz/Herz & Pfote",
+      "url": "/lexikon/Tierschutz/Herz & Pfote/Leyla und Chako.jpg",
+      "size": 4278153,
+      "modified": 1760787186000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Logo Herz und Pfote.jpg",
+      "path": "/Tierschutz/Herz & Pfote",
+      "url": "/lexikon/Tierschutz/Herz & Pfote/Logo Herz und Pfote.jpg",
+      "size": 27255,
+      "modified": 1757933589851.7642,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Mahnwache.jpg",
+      "path": "/Tierschutz/Herz & Pfote",
+      "url": "/lexikon/Tierschutz/Herz & Pfote/Mahnwache.jpg",
+      "size": 500857,
+      "modified": 1760824745000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Silentline.jpg",
+      "path": "/Tierschutz/Herz & Pfote",
+      "url": "/lexikon/Tierschutz/Herz & Pfote/Silentline.jpg",
+      "size": 158333,
+      "modified": 1757932722164.3079,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Team Herz und Pfote.jpg",
+      "path": "/Tierschutz/Herz & Pfote",
+      "url": "/lexikon/Tierschutz/Herz & Pfote/Team Herz und Pfote.jpg",
+      "size": 361385,
+      "modified": 1760894407000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Veranstaltungen.md",
+      "path": "/Tierschutz/Herz & Pfote",
+      "url": "/lexikon/Tierschutz/Herz & Pfote/Veranstaltungen.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "dir",
+      "name": "Katzenschutz",
+      "path": "/Tierschutz/Katzenschutz"
+    },
+    {
       "type": "file",
       "name": "faq_katzenschutzverordnung.pdf",
-      "path": "/Tierschutz",
-      "url": "/lexikon/Tierschutz/faq_katzenschutzverordnung.pdf",
+      "path": "/Tierschutz/Katzenschutz",
+      "url": "/lexikon/Tierschutz/Katzenschutz/faq_katzenschutzverordnung.pdf",
       "size": 239200,
-      "modified": 1763677942531.886,
+      "modified": 1763472099675.0176,
       "mime": "application/pdf"
     },
     {
       "type": "file",
       "name": "Forchheim, heb die Hand.mp3",
-      "path": "/Tierschutz",
-      "url": "/lexikon/Tierschutz/Forchheim, heb die Hand.mp3",
+      "path": "/Tierschutz/Katzenschutz",
+      "url": "/lexikon/Tierschutz/Katzenschutz/Forchheim, heb die Hand.mp3",
       "size": 5533845,
-      "modified": 1763677942525.372,
+      "modified": 1763474367000,
       "mime": "audio/mpeg"
     },
     {
       "type": "file",
       "name": "Katzenschutz-Lied.md",
-      "path": "/Tierschutz",
-      "url": "/lexikon/Tierschutz/Katzenschutz-Lied.md",
+      "path": "/Tierschutz/Katzenschutz",
+      "url": "/lexikon/Tierschutz/Katzenschutz/Katzenschutz-Lied.md",
       "size": 2374,
-      "modified": 1763677942526.377,
+      "modified": 1763474774903.6885,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Katzenschutzverordnung.md",
+      "path": "/Tierschutz/Katzenschutz",
+      "url": "/lexikon/Tierschutz/Katzenschutz/Katzenschutzverordnung.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
       "mime": "text/markdown"
     },
     {
       "type": "file",
       "name": "Katzenschutzverordnung.png",
-      "path": "/Tierschutz",
-      "url": "/lexikon/Tierschutz/Katzenschutzverordnung.png",
+      "path": "/Tierschutz/Katzenschutz",
+      "url": "/lexikon/Tierschutz/Katzenschutz/Katzenschutzverordnung.png",
       "size": 564942,
-      "modified": 1763677942530.3816,
+      "modified": 1763471849170.9597,
       "mime": "image/png"
     },
     {
@@ -186,21 +893,76 @@
       "mime": "audio/mpeg"
     },
     {
+      "type": "dir",
+      "name": "Tierheim Forchheim",
+      "path": "/Tierschutz/Tierheim Forchheim"
+    },
+    {
+      "type": "file",
+      "name": "Sharin(6).jpg",
+      "path": "/Tierschutz/Tierheim Forchheim",
+      "url": "/lexikon/Tierschutz/Tierheim Forchheim/Sharin(6).jpg",
+      "size": 2423322,
+      "modified": 1763491645000,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Sheila(13) - vermittelt.png",
+      "path": "/Tierschutz/Tierheim Forchheim",
+      "url": "/lexikon/Tierschutz/Tierheim Forchheim/Sheila(13) - vermittelt.png",
+      "size": 1239441,
+      "modified": 1762299091053.1575,
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
+      "name": "Spenden Tierheim Fo.jpg",
+      "path": "/Tierschutz/Tierheim Forchheim",
+      "url": "/lexikon/Tierschutz/Tierheim Forchheim/Spenden Tierheim Fo.jpg",
+      "size": 153749,
+      "modified": 1763475702270.161,
+      "mime": "image/jpeg"
+    },
+    {
+      "type": "file",
+      "name": "Weihnachten.md",
+      "path": "/Tierschutz/Tierheim Forchheim",
+      "url": "/lexikon/Tierschutz/Tierheim Forchheim/Weihnachten.md",
+      "size": 439,
+      "modified": 1749416542351.3025,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "dir",
+      "name": "Tierleid",
+      "path": "/Tierschutz/Tierleid"
+    },
+    {
+      "type": "file",
+      "name": "Tierleid-Zahlen.md",
+      "path": "/Tierschutz/Tierleid",
+      "url": "/lexikon/Tierschutz/Tierleid/Tierleid-Zahlen.md",
+      "size": 179,
+      "modified": 1763676102339.6475,
+      "mime": "text/markdown"
+    },
+    {
+      "type": "file",
+      "name": "Tierschmutz.png",
+      "path": "/Tierschutz/Tierleid",
+      "url": "/lexikon/Tierschutz/Tierleid/Tierschmutz.png",
+      "size": 83847,
+      "modified": 1760680021747.5386,
+      "mime": "image/png"
+    },
+    {
       "type": "file",
       "name": "Tierschutz-Lied.md",
       "path": "/Tierschutz",
       "url": "/lexikon/Tierschutz/Tierschutz-Lied.md",
       "size": 2066,
       "modified": 1763475070490.0334,
-      "mime": "text/markdown"
-    },
-    {
-      "type": "file",
-      "name": "vorlage.md",
-      "path": "/",
-      "url": "/lexikon/vorlage.md",
-      "size": 439,
-      "modified": 1763677942532.8933,
       "mime": "text/markdown"
     }
   ]
